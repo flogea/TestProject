@@ -388,21 +388,18 @@ nav {
  	cursor: pointer;
  	border: 2px solid #ff85af;
  	border-radius: 20px;
+	 background: transparent;
 }
 
-.classic {
-	background: transparent;
-}
-
-.inverse {
+.button.inverse {
 	background-color: #ff85af;
 }
 
-.inverse:hover {
+.button.inverse:hover {
 	background: transparent;
 }
 
-.classic:hover {
+.button:hover {
 	background-color: #ff85af;
 }
 
