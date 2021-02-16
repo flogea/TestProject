@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>OpenSpace</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	</head>
+
+
+
+<body>
+
+<header>
+  <div class="header_logo"><p>OpenSpace</p></div>
+    <nav>
+    	<div class="top-nav" id="MyNav">
+        <a href="#yak1">О нас</a>
+        <a href="#yak2">Местоположение</a>
+        <a href="#yak3">Стоимость</a>
+        <a href="#">Галерея</a>
+        <a href="#" id="menu" class="icon">&#9776;</a>
+      </div>
+    </nav>
+    <button class="button" href="#yak5">Записаться</button>
+</header>
+
+<main>
+	<div class="main_welcome">
+		<h1>Добро пожаловать в <span class="mycompany">OpenSpace</span></h1>
+		<p>Живой коворкинг в самом сердце Санкт-Петербурга</p>
+		<div class="geo_icon">
+			<img src="icons/location.png">
+			<p>м. Петроградская</p>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="main_about" id="yak1">
+			<div class="about_left">
+				<img src="img/laptop.png" alt="work">
+			</div>
+			<div class="about_right">
+				<h1>Почему в коворкинге продуктивнее, чем дома?</h1>
+				<p>Коворкинг - это месте, где вы можете не только работать, но и заводить новые полезные контакты и связи, обмениваться опытом и идеями. <br>Благодаря рабочей атмосфере, здесь Вы можете сосредоточиться только на работе и врмеменно забыть о личных делах, которые так часто лезут в голову при работе дома.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_contacts" id="yak2">
+		<div class="wrapper">
+			<h1>Где мы находимся?</h1>
+			<div class="line"></div>
+				<div class="offices">					
+					<div class="office1">
+						<div class="view">
+							<img src="icons/location.png">
+							<h4>м. Петроградская</h4>
+						</div>
+						<p>Каменноостровский пр., д.33, 3 этаж</p>
+					</div>
+					<div class="office2">
+						<div class="view">
+							<img src="icons/location.png">
+							<h4>м. Приморская</h4>
+						</div>
+						<p>ул. Одоевского, д.28, кв. 192</p>
+					</div>
+					<div class="office3">
+						<div class="view">
+							<img src="icons/location.png">
+							<h4>м. Фрунзенская</h4>
+						</div>
+						<p>Московский пр-т., д.82, литера А, 1 этаж</p>
+					</div>
+					<div class="office4">
+						<div class="view">
+							<img src="icons/location.png">
+							<h4>м. Новочеркасская</h4>
+						</div>
+						<p>Малоохтинский пр., д.80, 1 этаж</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_price" id="yak3">
+		<div class="price">
+			<div class="price_left">
+				<h1>Стоимость посещения</h1>
+				<h3> 9 990 руб/мес <span>при покупке на месяц</span></h3>
+				<h3> 7 990 руб/мес <span>при покупке от 3х месяцев</span></h3>
+				<h3> 5 990 руб/мес <span>при покупке от одного года</span></h3>
+				<button class="button" href="#">Записаться</button>
+			</div>
+			<div class="price_right">
+				<img src="img/woman.png" alt="woman">
+			</div>
+		</div>
+	</div>
+
+	<div class="main_anketa" id="yak5">
+		<div class="info">
+			<h1>Запись на посещение</h1>
+			<form action="data.txt">
+				<div class="information">
+					<div class="infospace">
+						<label for="name">Имя</label>
+						<input class="name" type="text" name="name" required="data.txt">
+					</div>
+					<div class="infospace">
+						<label for="phone">Телефон</label>
+						<input class="tel" type="tel" name="phone" required="data.txt">
+					</div>
+					<div class="infospace">
+						<label for="email">Почта</label>
+						<input class="email" type="email" name="email" required="data.txt">
+					</div>
+				</div>
+				<div>
+					<label for="adres">Адрес коворкинга</label>
+					<select name="adres">
+						<option>Выберите адрес офиса</option>
+						<option value="Петроградская">Петроградская</option>
+						<option value="Приморская">Приморская</option>
+						<option value="Фрунзенская">Фрунзенская</option>
+						<option value="Новочеркасская">Новочеркасская</option>
+					</select>
+					<div class="select-arrow"></div>
+				</div>
+				<button class="button" type="submit">Записаться</button>
+			</form>
+		</div>
+	</div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
