@@ -391,6 +391,15 @@ nav {
  	background: transparent;
 }
 
+.inverse {
+	border: 2px solid #ff85af;
+	background-color: #ff85af;
+}
+
+.inverse:hover {
+	background: transparent;
+}
+
 .button:hover {
 	background-color: #ff85af;
 }
